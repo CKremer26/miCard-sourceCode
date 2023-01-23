@@ -104,7 +104,7 @@ class _MyHomepageState extends State<MyHomepage> {
         onPressed: () => Navigator.push(
             context, MaterialPageRoute(builder: (context) => const Page2())),
         tooltip: "Next Page",
-        child: const Icon(Icons.arrow_forward_ios_sharp),
+        child: const Icon(Icons.arrow_forward),
       ),
     );
   }

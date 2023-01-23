@@ -97,11 +97,36 @@ class _Page2State extends State<Page2> {
                   Padding(
                     padding: const EdgeInsets.all(15.0),
                     child: ElevatedButton(
-                        onPressed: _reset, child: const Text("Reset")),
+                        onPressed: _reset,
+                        child: SizedBox(
+                          width: 70,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: const [
+                              Padding(
+                                padding: EdgeInsets.fromLTRB(0, 0, 10, 0),
+                                child: Text("Reset"),
+                              ),
+                              Icon(Icons.replay_outlined),
+                            ],
+                          ),
+                        )),
                   ),
                   ElevatedButton(
                       onPressed: () => Navigator.pop(context),
-                      child: const Text("Go Back")),
+                      child: SizedBox(
+                        width: 86,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: const [
+                            Padding(
+                              padding: EdgeInsets.fromLTRB(0, 0, 10, 0),
+                              child: Text("Go Back"),
+                            ),
+                            Icon(Icons.arrow_back),
+                          ],
+                        ),
+                      )),
                 ],
               ),
             )
